@@ -36,21 +36,22 @@ let isInViewport = function (elem) {
 const menuUlElement = document.querySelector("#navbar_list")
 const fragment = document.createDocumentFragment();
 
-for (let i=0; i<sections.length; i++){
+sections.forEach((section, i) => {
   const meunuLiElement = document.createElement('li');
   const meunuAnchorElement = document.createElement('a');
   meunuAnchorElement.innerText = sections[i].dataset.nav;
   meunuAnchorElement.href ="#section"+(i+1); // Scroll to section on link click
   meunuLiElement.appendChild(meunuAnchorElement);
   fragment.appendChild(meunuLiElement);
-}
+});
+
 
 menuUlElement.appendChild(fragment);
 
 // Add class 'active' to section when near top of viewport
 
 document.addEventListener("scroll", function(){
-  for (let i=0; i < sections.length; i++){
+  sections.forEach((item, i) => {
     let sectionClassList = sections[i].classList;
     let devClassList = sections[i].querySelector('div').classList;
 
@@ -64,7 +65,7 @@ document.addEventListener("scroll", function(){
       devClassList.remove("landing__container::before", "landing__container::after");
       menuUlElement.querySelectorAll('li')[i].querySelector('a').classList.remove("activeState");
     }
-  }
+  });
 });
 
 // Scroll to anchor ID using scrollTO event
