@@ -40,11 +40,10 @@ sections.forEach((section, i) => {
   const meunuLiElement = document.createElement('li');
   const meunuAnchorElement = document.createElement('a');
   meunuAnchorElement.innerText = sections[i].dataset.nav;
-  meunuAnchorElement.href ="#section"+(i+1); // Scroll to section on link click
+  meunuAnchorElement.id =""+i; // Scroll to section on link click
   meunuLiElement.appendChild(meunuAnchorElement);
   fragment.appendChild(meunuLiElement);
 });
-
 
 menuUlElement.appendChild(fragment);
 
@@ -69,6 +68,14 @@ document.addEventListener("scroll", function(){
 });
 
 // Scroll to anchor ID using scrollTO event
+
+document.querySelectorAll('a').forEach((item, i) => {
+  item.addEventListener('click', function(){
+    document.getElementById('section'+(i+1))
+    .scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  });
+});
+
 
 
 /**

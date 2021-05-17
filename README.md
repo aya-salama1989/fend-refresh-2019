@@ -1,37 +1,35 @@
-# Front End Nanodegree Program
 
-Front End Nanodegree Content & Project Resources
+# Landing Page Project
 
-## Table of Contents
+Landing Page Project is a Web page built using Javascript, HTML and CSS
 
-* [Projects](#projects)
-* [Courses](#courses)
-* [Style-Guide](#style-guide)
+## How to Run?
 
-## Projects
+Download the whole project and run index.html file over any browser.
 
-The following is a list of current projects required to complete the Front End Nanodegree.
+## Nature of the project
 
-Note that projects that do not include associated starter code are not linked here.
+This project is modification for a Udacity base project used for educational purposes
 
-1. Personal Blog Website
-2. [Landing Page](https://github.com/udacity/fend/tree/refresh-2019/projects/landing-page)
-3. [Weather Journal App](https://github.com/udacity/fend/tree/refresh-2019/projects/weather-journal-app)
-4. [Evaluate A News Article with Natural Language Processing](https://github.com/udacity/fend/tree/refresh-2019/projects/evaluate-news-nlp)
-5. Capstone - Travel App
+## License
+MIT License
 
-## Courses
+Copyright (c) [2021] [Aya Salama]
 
-The following is a list of the courses associated with the Front End Nanodegree.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* C1 - CSS, Website Layout, Website Components
-* C2 - JavaScript & The DOM
-* C3 - Web API's and Asynchronous Applications
-* C4 - Build Tools and Single Page Web Apps
-* C5 - Capstone
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Style-Guide
-
-See below for the Udacity Style Guide used thoroughout the Front End Nanodegree.
-
-* [Nanodegree Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
