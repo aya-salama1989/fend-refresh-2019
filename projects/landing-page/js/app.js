@@ -40,7 +40,6 @@ sections.forEach((section, i) => {
   const meunuLiElement = document.createElement('li');
   const meunuAnchorElement = document.createElement('a');
   meunuAnchorElement.innerText = sections[i].dataset.nav;
-  meunuAnchorElement.id =""+i; // Scroll to section on link click
   meunuLiElement.appendChild(meunuAnchorElement);
   fragment.appendChild(meunuLiElement);
 });
@@ -66,6 +65,7 @@ document.addEventListener("scroll", function(){
     }
   });
 });
+
 
 // Scroll to anchor ID using scrollTO event
 
