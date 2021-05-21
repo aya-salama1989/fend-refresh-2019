@@ -18,12 +18,18 @@ const sections = document.querySelectorAll("section[data-nav]");
 //   let bounding = elem.getBoundingClientRect();
 //   return (
 //     bounding.top >= 0 &&
-//     bounding.left >= 0 &&
 //     bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
 //     bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
 //   );
 // };
 
+// // // Check if the element in the viewport
+// const isInViewport = elem => {
+// 	// Get the element top coordinate
+//   const topBoundary = elem.getBoundingClientRect().top;
+//   // 0.4 works good without overlapping sections
+//   return topBoundary < windHeight * 0.4 && topBoundary > windHeight * -0.6  ;
+// };
 
 /**
 * End Helper Functions
@@ -68,28 +74,28 @@ menuUlElement.appendChild(fragment);
 
 // the callback function that will be fired
 // when the element apears in the viewport
-function onEntry(entry) {
-  let menuElements = menuUlElement.querySelectorAll('li')
-  entry.forEach((change, i) => {
-    change.target.classList.add("your-active-class");
-    change.target.classList.add("landing__container::before", "landing__container::after");
-    menuElements[i].querySelector('a').classList.add("activeState");
-  });
-}
-
-// list of options
-let options = {
-  threshold: [0.1]
-};
-
-// instantiate a new Intersection Observer
-let observer = new IntersectionObserver(onEntry, options);
-
-// loop through all elements
-// pass each element to observe method
-sections.forEach((item, i) => {
-  observer.observe(item);
-});
+// function onEntry(entry) {
+//   let menuElements = menuUlElement.querySelectorAll('li')
+//   entry.forEach((change, i) => {
+//     change.target.classList.add("your-active-class");
+//     change.target.classList.add("landing__container::before", "landing__container::after");
+//     menuElements[i].querySelector('a').classList.add("activeState");
+//   });
+// }
+//
+// // list of options
+// let options = {
+//   threshold: 0.5
+// };
+//
+// // instantiate a new Intersection Observer
+// let observer = new IntersectionObserver(onEntry, options);
+//
+// // loop through all elements
+// // pass each element to observe method
+// sections.forEach((item, i) => {
+//     observer.observe(item);
+// });
 
 
 // Scroll to anchor ID using scrollTO event
